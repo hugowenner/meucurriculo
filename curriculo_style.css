@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('imagens/dados.jpg'); /* Caminho relativo */
+    background-image: url('imagens/clean.jpg'); /* Caminho relativo */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
