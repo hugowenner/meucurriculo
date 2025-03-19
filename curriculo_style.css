@@ -116,3 +116,18 @@ header {
     background: linear-gradient(to right, #0056b3, #0084ff);
     transform: scale(1.05);
 }
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    animation: slideIn 0.8s ease-in-out;
+}
