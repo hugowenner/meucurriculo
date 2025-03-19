@@ -9,6 +9,14 @@ body {
     min-height: 100vh;
 }
 
+.minha-foto {
+    width: 150px;  /* Ajuste o tamanho conforme necessário */
+    height: 150px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 50%; /* Deixa a imagem redonda */
+    display: block;
+    margin: 100px auto; /* Centraliza a imagem */
+    border: 3px solid white; /* Borda branca opcional */
+}
 
 .container {
     background: white;
