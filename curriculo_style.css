@@ -7,7 +7,14 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-image: url('imagens/dados.jpg'); /* Caminho relativo */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+    
+      
 }
+
 
 .minha-foto {
     width: 150px;  /* Ajuste o tamanho conforme necessário */
