@@ -8,59 +8,64 @@ body {
     align-items: center;
     min-height: 100vh;
     background-image: url('imagens/dados.jpg'); /* Caminho relativo */
-    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
-    background-position: center; /* Centraliza a imagem */
-    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
-    
-      
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-
 .minha-foto {
-    width: 150px;  /* Ajuste o tamanho conforme necessário */
-    height: 150px; /* Ajuste o tamanho conforme necessário */
-    border-radius: 50%; /* Deixa a imagem redonda */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     display: block;
-    margin: 10px auto; /* Centraliza a imagem */
-    border: 5px solid #007bff; /* Cor azul, altere se quiser */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Efeito de sombra opcional */
+    margin: 10px auto;
+    border: 5px solid #007bff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .container {
-    background: white;
+    background: rgba(0, 0, 0, 0.8); /* Fundo um pouco mais escuro */
+    color: white;
     width: 60%;
     padding: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     text-align: center;
 }
 
-header {
-    border-bottom: 2px solid #007BFF;
-    padding-bottom: 15px;
-    margin-bottom: 20px;
+/* Garantindo que todo o texto fique branco */
+.container h1, 
+.container h2, 
+.container h3, 
+.container p, 
+.container ul, 
+.container li, 
+.container a {
+    color: white;
 }
 
+/* Melhorando títulos para harmonizar */
 h1 {
     color: #007BFF;
-    font-size: 26px;
+    font-size: 28px;
     margin: 0;
+    font-weight: bold;
 }
 
 h2 {
-    color: #333;
-    font-size: 18px;
+    color: white; /* Agora fica visível */
+    font-size: 20px;
     margin-top: 20px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #007BFF;
     padding-bottom: 5px;
 }
 
 p, ul {
-    color: #555;
     font-size: 14px;
     line-height: 1.6;
 }
 
+/* Estilizando a lista */
 ul {
     list-style-type: none;
     padding: 0;
@@ -68,24 +73,46 @@ ul {
 
 ul li::before {
     content: "✔ ";
-    color: #007BFF;
+    color: #00c6ff;
     font-weight: bold;
 }
 
+/* Links agora ficam mais suaves */
+.container a {
+    color: #00c6ff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.container a:hover {
+    color: #87cefa;
+    text-decoration: underline;
+}
+
+/* Header estilizado */
+header {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+/* Botão aprimorado */
 .button {
     display: inline-block;
     width: 100%;
     padding: 12px;
-    background-color: #007BFF;
+    background: linear-gradient(to right, #007BFF, #00c6ff);
     color: white;
     font-size: 16px;
     margin-top: 20px;
     border-radius: 5px;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
     cursor: pointer;
     border: none;
+    font-weight: bold;
 }
 
 .button:hover {
-    background-color: #002855;
+    background: linear-gradient(to right, #0056b3, #0084ff);
+    transform: scale(1.05);
 }
